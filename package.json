@@ -33,6 +33,7 @@
   "dependencies": {
     "autoprefixer": "^10.2.6",
     "axios": "^0.21.1",
+    "firebase-tools": "^9.12.0",
     "urix": "^0.1.0"
   }
 }
