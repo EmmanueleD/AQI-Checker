@@ -41,6 +41,7 @@ In case that there isn't an available station in the location you searched, the 
 - [Axios](https://github.com/axios/axios)
 - [WebPack](https://webpack.js.org/)
 - The lovely community of [Start2impact](www.start2impact.it)
+- [Animate.style](https://animate.style/)
 - [Make a Readme](https://www.makeareadme.com/#)
 - [matiassingers/awesome-readme](https://github.com/matiassingers/awesome-readme)
 - [Leaflet](https://leafletjs.com/)
