@@ -1,0 +1,179 @@
+*{
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  color: var(--color-II-light);
+}
+
+:root{
+  --font-I: "Montserrat Alternates";
+  --font-II: "Alegreya Sans SC";
+  --font-III: "Padauk";
+
+  --color-I: #304769;
+  --color-II: #518ad4;
+  --color-II-dark: #1f3f6988;
+  --color-II-light: #b0c5e7;
+  --color-III: #7feedb;
+
+  --white: #d2ece5;
+  --black: #181818;
+}
+
+/*elements*/
+body{
+  background: var(--color-I);
+  background: linear-gradient(150deg, 
+  var(--color-I) 0%, 
+  var(--color-II) 100%);
+}
+
+h2{
+  font-size: 2em;
+  font-family: var(--font-I);
+  font-weight: 700;
+  color: var(--color-III)
+}
+
+p{
+  font-size: 1em;
+  font-family: var(--font-III);
+}
+
+h3, h4, h5, h6{
+  font-size: 1em;
+  line-height: 2em;
+  font-family: var(--font-I);
+}
+
+span{
+  color: var(--color-II-light);
+}
+
+/*ids*/
+
+#mapid { 
+  width: 100%;
+  height: 300px; 
+  background-color: var(--color-II-dark);
+  border: solid 1px var(--color-II-light);
+  border-radius: 6px;
+  color: var(--black);
+}
+
+#aqi-index{
+  font-family: var(--font-I);
+  font-weight:bolder;
+  font-size: 2.5em;
+  color: var(--white);
+}
+
+#aqi-level{
+  font-size: 1.5em;
+  color: var(--white);
+}
+
+/*classes*/
+.app-container{
+  margin: auto;
+  max-width: 85vw;
+  text-align: center;
+  line-height: 2.5em;
+}
+
+.header{
+  padding-top: 5em;
+  background-color: var(--color-i);
+}
+
+.sec{
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search-form{
+  display: flex;
+  justify-content: space-between; 
+}
+
+.search-bar{
+  padding: 0.2em 1em;
+  font-size: 1.5em;
+  border-radius: 6px;
+  background-color: var(--color-II-dark);
+}
+
+.search-input {
+  outline: none;
+  border: none;
+  background-color: transparent;
+}
+
+.search-input:focus{
+  border: none;
+}
+
+.input-submit:hover{
+  cursor: pointer;
+}
+
+.aqi-sec{
+  width: 100%;
+}
+
+.air-pollution-level{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.info-box{
+
+  max-width: 450px;
+  background-color: var(--color-II-dark);
+  padding: 0.5vw 10vw;
+  margin: 15px 0 0 0;
+  border-radius: 6px;
+}
+
+.city-name{
+  padding-top: 1em;
+  font-size: 1em;
+}
+
+.air-pollution-level{
+  margin-bottom: 2.5em;
+}
+
+.results{
+  display: grid;
+  place-items: center;
+  width: 100%;
+}
+
+.results p{
+  font-weight: bolder;
+  text-align: start;
+  color: var(--color-III);
+}
+
+.result-item{
+  padding: 0.6em;
+}
+
+.max450{
+  max-width: 450px;
+}
+
+.footer{
+  background-color: var(--color-ii);
+}
+
+.error{
+background-color: rgba(161, 39, 39, 0.589);
+border: solid 1px red;
+border-radius: 5px;
+}

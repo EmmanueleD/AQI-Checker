@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <title>🌎 AQI Checker 🌏</title>
+  <link rel="stylesheet" href="../build/style.css">
+
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;500;700&family=Montserrat+Alternates:wght@300;500;700&family=Padauk:wght@400;700&display=swap" rel="stylesheet"> 
+  
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+crossorigin=""/>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+
+</head>
+<body>
+  
+  <div class="app-container">
+    <div class='header'>
+      <h2>🌎 AQI Checker 🌏</h2>
+      <h3>Air Quality Index around the Globe</h3>
+      
+    </div>
+    <div class="sec">
+        
+        <form class="search-form">
+          <div class="search-bar">
+            <input class="search-input input-text" onClick="this.setSelectionRange(0, this.value.length)" type="text" name="city" placeholder="Search for a city">
+            <input class="search-input input-submit" type="submit" value="🔍">
+          </div>
+        </form>
+        
+        <div class="aqi-sec">
+          <div class="air-pollution-level">
+            <div class="info-box">
+              <div class="city-name"></div>
+              <h3 id="aqi-index" class="animate__animated"></h3>
+              <p id="aqi-level"></p>
+            </div>
+          </div>
+          <div class="results">
+            <div id="mapid"></div>
+            <div class="max450">
+              <div class="result-item health-implications">
+                <p>Health Implications: <span id="health-implications"></span></p>
+              </div>
+              <div class="result-item cautionary-statement">
+                <p>Cautionary Statement (for PM2.5): <span id="cautionary-statement"></span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+  integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+  crossorigin=""></script>
+  <script src="../build/bundle.js"></script>
+</body>
+</html>
