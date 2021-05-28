@@ -1,6 +1,13 @@
 # 🌎 AQI Checker 🌏
 
+***
+You can try this app at the following link
+
+[🌎 AQI Checker 🌏](https://aqi-webapp.web.app/)
+***
+
 ## Description
+
 
 This application is the final project for the Javascript advanced course by [Start2impact](www.start2impact.it) 
 
@@ -9,7 +16,13 @@ The goal of this project is to display the AQI (Air quality index) from around t
 This project uses data from the [World Air Quality Index project](https://aqicn.org/contact/#/w/es), and uses [Leaflet](https://leafletjs.com/) to build the map
 
 
-## Preview
+## Preview and usage
+
+As the app loads it will show you the nearest station to your position.
+
+Then you can search for places (cities, nations, etc.) in the search bar.
+
+In case that there isn't an available station in the location you searched, the app will set the view of the map at your location so you can check available stations near you
 
 #### Desktop view
 
@@ -19,20 +32,9 @@ This project uses data from the [World Air Quality Index project](https://aqicn.
 
 ![Screenshot, mobile view](./src/IMG/previewMobile.jpg)
 
-## Environment Variables
 
-For this project you will need a key from [Air Quality Open Data Platform](https://aqicn.org/data-platform/token/#/)
 
-Once you get your key you can:
-- Copy paste it in the file **.env.example** that you can find in the root of the project
-- Rename said file in **.env**
-
-Your **.env** file should look like something like this
-```bash
-AQI_KEY=4il2buob2o3iu42i34jn2p34iun2pi43b2
-```
-
-## Resources used
+## What I used for this project
 
 - [HTML](https://developer.mozilla.org/es/docs/Web/HTML), [CSS](https://developer.mozilla.org/es/docs/Web/CSS)
 - [JavaScript](https://developer.mozilla.org/es/docs/Web/JavaScript)
@@ -43,6 +45,18 @@ AQI_KEY=4il2buob2o3iu42i34jn2p34iun2pi43b2
 - [matiassingers/awesome-readme](https://github.com/matiassingers/awesome-readme)
 - [Leaflet](https://leafletjs.com/)
 - [Air Quality Open Data Platform](https://aqicn.org/data-platform/token/#/)
+- [Firebase](https://firebase.google.com/)
+
+## Contact
+
+Ciao! Io sono **Emmanuele Durante**
+
+You can find me on:
+[LinkedIn](https://www.linkedin.com/feed/) and 
+[Instagram](https://www.instagram.com/emmanuele.online/)
+
+Or you can visit my 
+[Personal page](www.emmanuele.xyz)
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
